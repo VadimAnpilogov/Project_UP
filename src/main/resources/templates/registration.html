@@ -14,11 +14,10 @@
 <!--<div th:if="${param.logout}">-->
 <!--    You have been logged out.-->
 <!--</div>-->
-Добавление нового пользователя
+<p style="font-size: medium; color: white">Добавление нового пользователя</p>
 <form action="/registration" method="post">
-    <div><label> User Name : <input type="text" name="username"/> </label></div>
-    <br>
-    <div><label> Password: <input type="password" name="password"/> </label></div>
+    <div><label> User Name : <input class="form-styling" type="text" name="username"/> </label></div>
+    <div><label> Password: <input class="form-styling" type="password" name="password"/> </label></div>
     <br>
     <div><input type="submit" value="Sign In"/></div>
 <!--    <a href="login">Войти</a>-->

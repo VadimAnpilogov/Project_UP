@@ -6,6 +6,11 @@
 </head>
 <head th:replace="head :: head"></head>
 <body th:replace="menu :: menu"></body>
+<style>
+    body {
+        background: #c7b39b url(https://img.desktopwallpapers.ru/newyear/pics/wide/1920x1080/e4c4224f3693eebf0a60253c321e512c.jpg); /* Цвет фона и путь к файлу */
+    }
+</style>
 <body>
 
 <!--<div th:replace="fragments/header :: header"/>-->
@@ -21,7 +26,7 @@
             </ul>
         </div>
         <div ng-app ng-init="checked = false">
-            <form class="form-signin" action="" method="post" name="form">
+            <form class="form-signin" action="login" method="post" name="form">
                 <label for="username">Username</label>
                 <input type="text" name="username" id="username" class="form-styling"
                        placeholder="UserName" required="true" autofocus="true"/>
@@ -29,13 +34,13 @@
                 <input type="password" name="password" id="password" class="form-styling"
                        placeholder="Password" required="true"/>
                 <input type="checkbox" id="checkbox"/>
-                <div class="btn-animate">
-                    <input type="submit" class="form-styling" value="Sign In"/>
+                <div align="center">
+                    <input type="submit" class="loginForm" value="Sign In"/>
                 </div>
             </form>
 
-            <form class="form-signup" action="" method="post">
-                <label for="fullname">Username</label>
+            <form class="form-signup" action="registration" method="post">
+                <label >Username</label>
                 <input class="form-styling" type="text" name="username"/>
 <!--                <label for="email">Email</label>-->
 <!--                <input class="form-styling" type="text" name="email" placeholder=""/>-->
@@ -43,7 +48,7 @@
                 <input class="form-styling" type="password" name="password"/>
 <!--                <label for="confirmpassword">Confirm password</label>-->
 <!--                <input class="form-styling" type="text" name="confirmpassword" placeholder=""/>-->
-                <div><input class="form-styling" type="submit" value="Sign In"/></div>
+                <div align="center"><input class="loginForm" type="submit" value="Sign In"/></div>
             </form>
 
             <div  class="success">

@@ -43,9 +43,9 @@ public String home() {
     public String about() {
         return "/about";
     }
-
-    @GetMapping("/login")
-    public String login() {
-        return "/login";
-    }
+//
+//    @GetMapping("/login")
+//    public String login() {
+//        return "/login";
+//    }
 }

@@ -13,6 +13,9 @@ public class User {
     private Long id;
     private String username;
     private String password;
+    private String fio;
+    private String phone;
+    private String email;
     private boolean active;
 
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
@@ -58,5 +61,29 @@ public class User {
 
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
+    }
+
+    public String getFio() {
+        return fio;
+    }
+
+    public void setFio(String fio) {
+        this.fio = fio;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

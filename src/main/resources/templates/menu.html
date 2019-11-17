@@ -6,6 +6,7 @@
 
 <nav class="top-menu">
     <ul  class="menu-main">
+        <li class="right-item"><a th:href="@{'/FilterUsernameUser/{username}'(username=${#httpServletRequest.remoteUser})}">Личный кабинет</a></li>
         <li class="right-item"><a href="user">Страница пользователя</a></li>
         <li class="right-item"><a href="admin">Страница админа</a></li>
         <li class="right-item"><a href="home">Home</a></li>

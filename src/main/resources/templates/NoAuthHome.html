@@ -3,20 +3,27 @@
 <head>
     <title>Spring Boot Thymeleaf + Spring Security</title>
 
-<!--    <div th:replace="fragments/header :: header-css"/>-->
+    <!--    <div th:replace="fragments/header :: header-css"/>-->
 
 </head>
 <head th:replace="head :: head"></head>
 <body>
-<body th:replace="menu :: menu"></body>
+<!--<body th:replace="menu :: menu"></body>-->
 <!--<div th:replace="fragments/header :: header"/>-->
+<table align="right">
+    <tr>
+        <td> <a class = "login" href="home">Войти</a></td>
+<!--        <td> <a class = "login" href="logout">Выйти</a></td>-->
+    </tr>
+
+</table>
 
 
 <form align="center">
     <table align="center" width="90%">
         <tr>
-<!--            <td class="courses" background="https://hi-news.ru/wp-content/uploads/2019/04/math_main-650x433.jpeg">r2rt2z9Wc78.jpg-->
-<!--            <td class="courses"  background="https://st.depositphotos.com/1025323/2785/i/950/depositphotos_27850911-stock-photo-mathematics-abstraction.jpg">-->
+            <!--            <td class="courses" background="https://hi-news.ru/wp-content/uploads/2019/04/math_main-650x433.jpeg">r2rt2z9Wc78.jpg-->
+            <!--            <td class="courses"  background="https://st.depositphotos.com/1025323/2785/i/950/depositphotos_27850911-stock-photo-mathematics-abstraction.jpg">-->
             <td class="courses"  background="https://sun9-36.userapi.com/c857220/v857220181/4f806/r2rt2z9Wc78.jpg">
 
                 <h3 style="font-size: 30px;">Рисование</h3>
@@ -24,14 +31,14 @@
                 <button class="btn btn2">Записаться на курс</button>
             </td>
             <td class="courses" background="https://www.it-courses.by/wp-content/uploads/2018/06/20-Most-Common-Work-from-Home-Job-Titles.jpg">
-<!--            <td class="courses"  background="https://sun9-2.userapi.com/c857020/v857020200/50040/qbg0ciUcI0Y.jpg">-->
+                <!--            <td class="courses"  background="https://sun9-2.userapi.com/c857020/v857020200/50040/qbg0ciUcI0Y.jpg">-->
                 <br>
                 <h3 style="font-size: 30px;">Программирование</h3>
                 <p style="font-size: 20px">Изучение языка программирования Java<p>
                 <button class="btn btn2">Записаться на курс</button>
             </td>
             <td class="courses"  background="https://img1.goodfon.ru/wallpaper/nbig/e/6e/lindsey-stirling-lindsi-6036.jpg">
-<!--            <td class="courses"  background="https://sun9-64.userapi.com/c850416/v850416200/1481f9/rB_WprzKC1E.jpg">-->
+                <!--            <td class="courses"  background="https://sun9-64.userapi.com/c850416/v850416200/1481f9/rB_WprzKC1E.jpg">-->
                 <h3 style="font-size: 30px;">Игра на скрипке</h3>
                 <p style="font-size: 20px">Обучение игре на скрипке<p>
                 <button class="btn btn2">Записаться на курс</button>

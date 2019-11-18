@@ -8,7 +8,7 @@
 <body th:replace="menu :: menu"></body>
 <style>
     body {
-        background: #c7b39b url(https://img.desktopwallpapers.ru/newyear/pics/wide/1920x1080/e4c4224f3693eebf0a60253c321e512c.jpg); /* Цвет фона и путь к файлу */
+        background: url(https://img.desktopwallpapers.ru/newyear/pics/wide/1920x1080/e4c4224f3693eebf0a60253c321e512c.jpg); /* Цвет фона и путь к файлу */
     }
 </style>
 <body>
@@ -80,8 +80,8 @@
             <a class="btn-goback" value="Refresh" onClick="history.go()">Go back</a>
         </div>
     </div>
-
-    <a id="refresh" value="Refresh" onClick="history.go()">
+    <a id="refresh" value="Refresh" href="NoAuthHome">
+<!--    <a id="refresh" value="Refresh" onClick="history.go()">-->
         <svg class="refreshicon"   version="1.1" id="Capa_1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              width="25px" height="25px" viewBox="0 0 322.447 322.447" style="enable-background:new 0 0 322.447 322.447;"
              xml:space="preserve">

@@ -25,15 +25,6 @@ public class UserController {
         return "PersonalUser";
     }
 
-//    @GetMapping("/PersonalInfo")
-//    public String personalInfo(Map<String, Object> model){
-//
-//        Iterable<User> user1 = userRepository.findByUsername(username1);
-//        model.put("users", user1);
-//
-//
-//        return "PersonalInfo";
-//    }
 
     @GetMapping("FilterUsernameUser/{username}")
     public String FilterFioUser (@PathVariable String username, Map<String, Object> model){
@@ -44,15 +35,6 @@ public class UserController {
         return "redirect:/PersonalUser";
     }
 
-
-
-//    @GetMapping("FilterGroupsClasses/{groups}")
-//    public String FilterGroupsClasses (@PathVariable String groups, Map<String, Object> model) {
-//        Groups1=groups;
-//        Iterable<classes> classes1 = classesRepository.findByGroups(groups);
-//        model.put("classes", classes1);
-//        return "redirect:/classesG";
-//    }
 
 
 }
